@@ -1,0 +1,179 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 106px; /* supaya judul section tidak tertutup navbar */
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #f1f1f1;
+}
+.hero {
+    position: relative;
+    padding: 80px 20px;
+    background-image: url("../img/image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.hero h1,
+.hero p,
+.hero a {
+    position: relative;
+    z-index: 2;
+}
+.hero p {
+    max-width: 650px;
+    margin: 15px auto 0;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f6f7f9;
+}
+.hero p {
+    max-width: 650px;
+    margin: 15px auto 0;
+}
+section h2 {
+    font-weight: bold;
+}
+.card {
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+.form-kontak {
+    max-width: 600px;
+}
+footer {
+    font-size: 14px;
+    background-color: #0f0c0c !important;
+    color: #D4AF37 !important;
+}
+@media (max-width: 575.98px) {
+    .hero {
+        padding: 55px 15px;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
+.materi-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: border-color 0.2s;
+}
+.materi-card:hover {
+    border-color: #b99a58;
+}
+.materi-card .card-body {
+    padding: 24px;
+}
+.materi-card h5 {
+    color: #17365d;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.materi-card p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+.materi-label {
+    display: inline-block;
+    padding: 4px 9px;
+    background-color: #e9eef5;
+    color: #34495e;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.logo-kampus {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.navbar-kampus {
+    background-color: #0f0c0c;
+}
+.navbar-kampus .navbar-brand {
+    color: #D4AF37 !important;
+}
+.navbar-kampus .nav-link {
+    color: #D4AF37 !important;
+}
+footer.footer-kampus {
+    background-color: #0f0c0c !important;
+    color: #D4AF37 !important;
+}
+.navbar-kampus .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+:root,
+[data-bs-theme="dark"] {
+    --bs-body-bg: #000000;
+    --bs-body-color: #f1f1f1;
+    --bs-secondary-color: #b5b0a8;
+    --bs-border-color: #2b2626;
+}
+.section-alt {
+    background-color: #0f0c0c;
+    border-top: 1px solid #2b2626;
+    border-bottom: 1px solid #2b2626;
+}
+.card {
+    border-color: #2b2626;
+}
+.materi-card {
+    background: #141010;
+    border-color: #2b2626;
+}
+.materi-card:hover {
+    border-color: #D4AF37;
+}
+.materi-card h5 {
+    color: #D4AF37;
+}
+.materi-card p {
+    color: #cfcac2;
+}
+.materi-label {
+    background-color: rgba(212, 175, 55, 0.14);
+    color: #D4AF37;
+}
+.form-control {
+    background-color: #141010;
+    border-color: #3a3434;
+    color: #f1f1f1;
+}
+.form-control:focus {
+    background-color: #141010;
+    border-color: #D4AF37;
+    color: #f1f1f1;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+.form-control::placeholder {
+    color: #7d7771;
+}
+.navbar-kampus .nav-link {
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+.navbar-kampus .nav-link:hover,
+.navbar-kampus .nav-link.active {
+    border-bottom-color: #D4AF37;
+}
+section[id]:not(.hero) {
+    min-height: calc(100vh - 106px);
+    display: flex;
+    align-items: center;
+}
